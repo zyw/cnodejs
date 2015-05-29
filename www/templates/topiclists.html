@@ -1,0 +1,16 @@
+<ion-view view-title="首页">
+  <ion-content>
+    <ion-list class="list">
+      <ion-item ng-repeat="topic in topics" href="#/app/topiclists/{{topic.id}}" class="item item-avatar">
+        <img src="https://cnodejs.org{{topic.author.avatar_url}}" style="top:27px;">
+        <h2>{{topic.title}}</h2>
+        <p>{{topic.content | to_trusted | limitTo:80}}</p>
+        <div class="row topic-row">
+          <div class="topic-label col col-20" ng-bind-html="topic | label_dis"></div>
+          <div class="topic-label col topic-label-cl">{{topic.reply_count}}/{{topic.reply_count}}</div>
+          <div class="topic-label col text-right topic-label-cl">{{topic.last_reply_at | before_time}}</div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,27 @@
+/* Empty. Add your own CSS if you like */
+.left-menu {
+    background-color: #444444;
+    color:#FFF;
+}
+.icon-fs{
+    font-size: 1.3em;
+    margin-right:5px;
+}
+.topic-row{
+    padding:0;
+}
+.topic-label{
+    padding:0;
+}
+.topic-label-cl{
+    color:#888888;
+    font-size: 14px;
+}
+.topic-label span{
+    font-size:11px;
+    color:#fff;
+    padding: 2px 3px;
+}
+.item .item-content{
+    padding-right: 20px;
+}
